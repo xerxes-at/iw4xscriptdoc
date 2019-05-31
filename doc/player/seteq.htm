@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SetEq( &lt;channel&gt;, &lt;eqIndex&gt;, &lt;band&gt;, &lt;filter type&gt;, &lt;gain&gt;, &lt;frequency&gt;, &lt;q&gt; )</H1>
+<HR>
+<I>
+Module: Player<BR>
+SP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Set a parametric filter for the player on a specified channel</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+The player
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+level.player SetEq( "ambient", 0, "bell", 3, 1000, 2.1 );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;channel&gt;: the name of the audio channel to apply the eq to.</LI>
+<LI>2 : &lt;eqIndex&gt; : the eq index to use (0 and 1).</LI>
+<LI>3 : &lt;band&gt;: select which band, there are currently two bands (0 and 1).</LI>
+<LI>4 : &lt;filter type&gt;: the type of filter to apply ("lowpass", "highpass", "lowshelf", "highshelf", "bell" ).</LI>
+<LI>5 : &lt;gain&gt;: the gain in dB.  Has no effect on "lowpass" or "highpass</LI>
+<LI>6 : &lt;frequency&gt;: the "important" frequency, between 0 and 20 kHZ.  enter value in Hz.</LI>
+<LI>7 : &lt;q&gt;: the quality factor.</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

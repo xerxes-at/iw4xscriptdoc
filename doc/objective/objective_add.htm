@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>Objective_Add( &lt;objective_number&gt;, &lt;state&gt;, &lt;text&gt;, &lt;position&gt;, &lt;iconshader&gt; )</H1>
+<HR>
+<I>
+Module: Objective<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Adds a new objective </p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+Objective_Add( objective_number, "active", objective_text, (closest.bomb.origin) );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;objective_number&gt; The number of the objective to add</LI>
+<LI>2 : &lt;state&gt; A string value representing the state of the objective. Valid states are "empty", "active", "invisible", "done", "current" and "failed"</LI>
+</UL></TD></TR></TABLE>
+<BR><BR>
+<H2>Optional Args</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;text&gt; The text to use for the objective. This should be a valid localized text reference </LI>
+<LI>2 : &lt;position&gt; The position of the objective</LI>
+<LI>3 : &lt;iconshader&gt; The objective icon to embed</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

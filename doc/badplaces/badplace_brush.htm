@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>BadPlace_Brush( &lt;name&gt;, &lt;duration&gt;, &lt;brush entity&gt;, &lt;team&gt;, ... )</H1>
+<HR>
+<I>
+Module: BadPlaces<BR>
+SP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+<p>Creates a bad place from a brush entity. AI will flee this position if they can, and will not go into it if they can avoid it.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+BadPlace_Brush( "moody", -1, volumeEnt, "axis" );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD>
+<UL>
+<LI>1 : &lt;name&gt; The name of the bad place. If name is not "", the bad place can be moved or deleted by using the unique name.</LI>
+<LI>2 : &lt;duration&gt; If duration &gt; 0, the bad place will automatically delete itself after this time. If duration &lt;= 0, the bad place must have a name and will last until manually deleted.</LI>
+<LI>3 : &lt;brush entity&gt; The brush entity representing the bad place.</LI>
+<LI>4 : &lt;team&gt; You must specify at least one team for which this place is bad, but can give several.  The allowed teams are 'axis', 'allies', and 'neutral'.</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

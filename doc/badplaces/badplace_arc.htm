@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>BadPlace_Arc( &lt;name&gt;, &lt;duration&gt;, &lt;origin&gt;, &lt;radius&gt;, &lt;height&gt;, &lt;direction&gt;, &lt;right angle&gt;, &lt;left angle&gt;, &lt;team&gt;, ... )</H1>
+<HR>
+<I>
+Module: BadPlaces<BR>
+SP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+<p>Creates a bad place arc. AI will flee this position if they can, and will not go into it if they can avoid it.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+BadPlace_Arc( "halftrack_bp", -1, mg42.origin, 1500, 400, (1.00, 0.00, 0.00), 20, 0, "allies" );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD>
+<UL>
+<LI>1 : &lt;name&gt; The name of the bad place. If name is not "", the bad place can be moved or deleted by using the unique name.</LI>
+<LI>2 : &lt;duration&gt; If duration &gt; 0, the bad place will automatically delete itself after this time.  If duration &lt;= 0, the bad place must have a name and will last until manually deleted.</LI>
+<LI>3 : &lt;origin&gt; The base position of the bad place.</LI>
+<LI>4 : &lt;radius&gt; The radius of the bad place.</LI>
+<LI>5 : &lt;height&gt; The height of the bad place.</LI>
+<LI>6 : &lt;direction&gt; The direction vector is used to give a reference frame for the left and right angles.</LI>
+<LI>7 : &lt;right angle&gt; The left angle and right angle are both positive angles (eg, "45, 45" will give a 90 degree arc).</LI>
+<LI>8 : &lt;left angle&gt; The left angle and right angle are both positive angles (eg, "45, 45" will give a 90 degree arc).</LI>
+<LI>9 : &lt;team&gt; You must specify at least one team for which this place is bad, but can give several.  The allowed teams are 'axis', 'allies', and 'neutral'.</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+    <BODY class="content">
+        <HR>
+        <H1>OrientMode( &lt;orient mode&gt;, &lt;face angle&gt; | &lt;direction vector&gt; | &lt;face point&gt; ) </H1>
+        <HR>
+        <I>
+        Module: AI<BR>
+        SP Only<BR>
+        </I>
+
+        <BR>
+        <H2>Summary:</H2>
+        <TABLE>
+        <TR><TD>
+        <H3>
+        <p>Set the orient mode of this actor.</p>
+
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Call this on:</H2>
+        <TABLE>
+        <TR><TD>
+        <H3>
+        &lt;actor&gt; An actor
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Example:</H2>
+        <TABLE>
+        <TR><TD class="example">
+        <H3>
+        <PRE>
+        randAlly OrientMode( "face direction", level.player.origin-randAlly.origin );
+        </PRE>
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Required Args:</H2>
+        <TABLE>
+        <TR><TD>
+        <UL>
+        <LI>1 : &lt;orient mode&gt; (const string) OrientMode must be 'face angle', 'face current', 'face direction', 'face enemy', 'face enemy or motion', 'face goal', 'face motion', 'face point', or 'face default'</LI>
+        </UL></TD></TR></TABLE>
+        <BR><BR>
+        <H2>Optional Args</H2>
+        <TABLE>
+        <TR><TD>
+        <UL>
+        <LI>1 : &lt;face angle&gt; (float) The yaw angle to face if orient mode is 'face angle'</LI>
+        <LI>2 : &lt;direction vector&gt; (vector) The direction vector to face if orient mode is 'face direction'</LI>
+        <LI>3 : &lt;face position&gt; (vector) The point to face if orient mode is 'face point'</LI>
+        </UL></TD></TR></TABLE>
+        <BR>
+    </BODY>
+</HTML>

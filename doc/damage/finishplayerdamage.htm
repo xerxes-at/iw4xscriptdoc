@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>FinishPlayerDamage( &lt;Inflictor&gt;, &lt;Attacker&gt;, &lt;Damage&gt;, &lt;Damage Flags&gt;, &lt;Means of Death&gt;, &lt;Weapon&gt;, &lt;Direction&gt;, &lt;Hit Loc&gt;, &lt;OffsetTime&gt; )</H1>
+<HR>
+<I>
+Module: Damage<BR>
+MP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Does damage to a player - usually as part of the damage callback</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+A client
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+self FinishPlayerDamage( eInflictor, eAttacker, iDamage, iDFlags, sMeansOfDeath, sWeapon, vPoint, vDir, sHitLoc, psOffsetTime );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;Inflictor&gt; The entity that causes the damage.(e.g. a turret)</LI>
+<LI>2 : &lt;Attacker&gt; The entity that is attacking.</LI>
+<LI>3 : &lt;Damage&gt; Integer specifying the amount of damage done</LI>
+<LI>4 : &lt;Damage Flags&gt; Integer specifying flags that are to be applied to the damage</LI>
+<LI>5 : &lt;Means Of Death&gt; Integer specifying the method of death</LI>
+<LI>6 : &lt;Weapon&gt; The weapon number of the weapon used to inflict the damage</LI>
+<LI>7 : &lt;Direction&gt; (vector) The direction of the damage</LI>
+<LI>8 : &lt;Hit Loc&gt; The location of the hit</LI>
+<LI>9 : &lt;Offset Time&gt; The time offset for the damage</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

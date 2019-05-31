@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>PhysicsJitter( &lt;center&gt;, &lt;outer radius&gt;, &lt;inner radius&gt;, &lt;min displacement&gt;, &lt;max displacement&gt; )</H1>
+<HR>
+<I>
+Module: Physics<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Jitters physics objects touching the ground.  Jitter forces are calculated in such a way as to displace the object upwards some height between min and max displacement at each point of contact with the ground.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+PhysicsJitter( origin, 200, 150, 1.0, 5.0 );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;center&gt; The world position of the center of the cylinder</LI>
+<LI>2 : &lt;outer radius&gt; The radius beyond which the displacement is zero</LI>
+<LI>3 : &lt;inner radius&gt; The radius within which the displacement is maximum</LI>
+<LI>4 : &lt;min displacement&gt; Approximate minimum distance each contact point will be displaced</LI>
+<LI>5 : &lt;max displacement&gt; Approximate maximum distance each contact point will be displaced</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

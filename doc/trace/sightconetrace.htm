@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SightConeTrace( &lt;sight position&gt;, &lt;ignore entity&gt; )</H1>
+<HR>
+<I>
+Module: Trace<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Determines how much the entity can be seen from the given position, using the same check that is used by grenades. Performs multiple sight traces and returns an approximation to how much of the entity is visible from the given point (between 0 and 1). In SinglePlayer this will always be 1 if the entity is partially visible.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+&lt;entity&gt; The entity to do the sight check against
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+visibilityAmount = player SightConeTrace( eye.origin, eye );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;sight position&gt; The point the sight starts at</LI>
+</UL></TD></TR></TABLE>
+<BR><BR>
+<H2>Optional Args</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;ignore entity&gt; An entity to ignore when doing the traces</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

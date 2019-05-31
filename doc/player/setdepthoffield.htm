@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SetDepthOfField( &lt;near start&gt;, &lt;near end&gt;, &lt;far start&gt;, &lt;far end&gt;, &lt;near blur&gt;, &lt;far blur&gt; )</H1>
+<HR>
+<I>
+Module: Player<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Set the depth of field values for a player.  If start &gt;= end for near or far, depth of field is disabled for that region.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+&lt;player&gt;
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+self SetDepthOfField( 10, 80, 1000, 7000, 5, 1.5 );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;near start&gt; Before this distance, near depth of field is maximally blurry</LI>
+<LI>2 : &lt;near end&gt; After this distance, near depth of field is perfectly in focus</LI>
+<LI>3 : &lt;far start&gt; Before this distance, far depth of field is perfectly in focus</LI>
+<LI>4 : &lt;far end&gt; After this distance, far depth of field is maximally blurry</LI>
+<LI>5 : &lt;near blur&gt; Maximal blur radius for near depth of field, in pixels at 640x480</LI>
+<LI>6 : &lt;far blur&gt; Maximal blur radius for far depth of field, in pixels at 640x480</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

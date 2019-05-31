@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SetJitterParams( &lt;range vector&gt;, &lt;min period&gt;, &lt;max period&gt; )</H1>
+<HR>
+<I>
+Module: Vehicles<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Set the jitter parameters. Set everything to 0 to stop jittering. Vehicle ignores jitter parameters when on ground</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+a vehicle
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+self SetJitterParams( (0,0,20), 0.5, 1.5 ); // Jitter up or down randomly within 20 units, switching every 0.5 to 1.5 seconds
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;range vector&gt; The jitter range vector.</LI>
+</UL></TD></TR></TABLE>
+<BR><BR>
+<H2>Optional Args</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;min period&gt; Minimum time in seconds to switch jitter direction. Default 0.5 sec</LI>
+<LI>2 : &lt;max period&gt; Maximum time in seconds to switch jitter direction. Default 1.0 sec</LI>
+</UL></TD></TR></TABLE>
+<BR><BR>
+<H2>Notes:</H2>
+<TABLE>
+<TR><TD class="example">
+<PRE>
+For player helicopters, the jitter params are used for jittering the pitch and roll of the helicopter
+</PRE>
+</TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

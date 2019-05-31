@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SetProneAnimNodes( &lt;down angle&gt;, &lt;up angle&gt;, &lt;low prone animation&gt; , &lt;straight prone animation&gt;, &lt;high prone animation&gt; )</H1>
+<HR>
+<I>
+Module: AI<BR>
+SP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+<p>Set the prone animation nodes, as well as highest and lowest possible aim angles for this character.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+&lt;actor&gt; An actor
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+ self SetProneAnimNodes( -45, 45, %prone_legsdown, %prone_legsstraight, %prone_legsup );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD>
+<UL>
+<LI>1 : &lt;down angle&gt;(float) The lowest allowable pitch in degrees for aiming. Must be less than 0</LI>
+<LI>2 : &lt;up angle&gt;(float) The highest allowable pitch in degrees for aiming. Must be greater than 0</LI>
+<LI>3 : &lt;low prone animation&gt; The low prone animation.</LI>
+<LI>4 : &lt;straight prone animation&gt; The straight prone animation.</LI>
+<LI>5 : &lt;high prone animation&gt; The high prone animation.</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>UpdateProne( &lt;animation A&gt; , &lt;animation B&gt;, &lt;goal weight&gt;, &lt;goal time&gt;, &lt;rate&gt; )</H1>
+<HR>
+<I>
+Module: AI<BR>
+SP Only<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+<p>Set the actor to exit the prone position.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD>
+<H3>
+&lt;actor&gt; An actor
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+self UpdateProne( %prone_shootfeet_straight45up, %prone_shootfeet_straight45down, 1, 0.05, 1 );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD>
+<UL>
+<LI>1 : &lt;animation A&gt; The first animation to lerp between.</LI>
+<LI>2 : &lt;animation B&gt; The second animation to lerp between.</LI>
+<LI>3 : &lt;goal weight&gt; The blend amount between the two animations.</LI>
+<LI>4 : &lt;goal time&gt; The time to lerp to the new blend.</LI>
+<LI>5 : &lt;rate&gt; The animation play rate.</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

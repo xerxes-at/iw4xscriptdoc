@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>SetExpFog( &lt;startDist&gt;, &lt;halfwayDist&gt;, &lt;red&gt;, &lt;green&gt;, &lt;blue&gt;, &lt;transition time&gt; )</H1>
+<HR>
+<I>
+Module: Effects<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Creates an exponential fog.</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+SetExpFog( 0.0001144, 131/255, 116/255, 71/255, 0 );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;startDist&gt; The distance, in world units, at which the fog begins.</LI>
+<LI>2 : &lt;halfwayDist&gt; The distance, beyond the startDist, at which the scene will be 50% fogged.</LI>
+<LI>3 : &lt;red&gt; The red component of the fog as a value between 0.0 and 1.0</LI>
+<LI>4 : &lt;green&gt; The red component of the fog as a value between 0.0 and 1.0</LI>
+<LI>5 : &lt;blue&gt; The red component of the fog as a value between 0.0 and 1.0</LI>
+<LI>6 : &lt;transition time&gt; transition time in seconds</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>

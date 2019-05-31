@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+    
+    <BODY class="content">
+        <HR>
+        <H1>AnimMode( &lt;mode&gt; &lt;clear path&gt; )</H1>
+        <HR>
+        <I>
+        Module: AI<BR>
+        SP Only<BR>
+        </I>
+
+        <BR>
+        <H2>Summary:</H2>
+        <TABLE>
+        <TR><TD>
+        <H3>
+        <p>Set the way that animation deltas are interpreted by the game engine</p>
+
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Call this on:</H2>
+        <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+        <TR><TD>
+        <H3>
+        &lt;entity&gt;
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Example:</H2>
+        <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+        <TR><TD class="example">
+        <H3>
+        <PRE>
+        self AnimMode( "gravity" );
+        </PRE>
+        </H3>
+        </TD></TR></TABLE>
+        <BR><BR>
+        <H2>Required Args:</H2>
+        <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+        <TR><TD>
+        <UL>
+        <LI>1 : &lt;mode&gt; which animmode to use.  Must be 'gravity', 'nogravity', 'angle_deltas', 'zonly_physics', 'nophysics', 'none'</LI>
+        </UL></TD></TR></TABLE>
+        <BR><BR>
+        <H2>Notes:</H2>
+        <TABLE BORDER="1" CELLSPACING="1" CELLPADDING="4" WIDTH="100%">
+        <TR><TD class="example">
+        <PRE>
+        &lt;mode&gt; arguments-
+          gravity:       The animation's angle and position deltas will be used, and gravity will pull the entity down.
+          nogravity:     The animation's angle and position deltas will be used, gravity is ignored.
+          angle_deltas:  The animation's angle deltas will be used.  The position will be fixed.  Gravity is effective.
+          zonly_physics: Just like "gravity" mode, but only the Z (up and down) of the entity's position will change.
+          none:          Use default animmode behavior (i.e., code controls the movement).
+        </PRE>
+        </TD></TR></TABLE>
+        <BR>
+    </BODY>
+</HTML>

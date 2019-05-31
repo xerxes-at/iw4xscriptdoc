@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <HEAD>
+        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+        <meta charset="utf-8"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="../../res/style.css">
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <![endif]-->
+    </HEAD>
+
+    <BODY class="content">
+
+<HR>
+<H1>PlayLocalSound( &lt;sound name&gt; )</H1>
+<HR>
+<I>
+Module: Player<BR>
+</I>
+
+<BR>
+<H2>Summary:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+<p>Plays a sound locally to the player</p>
+
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Call this on:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<H3>
+The player
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Example:</H2>
+<TABLE>
+<TR><TD class="example">
+<H3>
+<PRE>
+players[i] PlayLocalSound( "MP_announcer_round_draw" );
+</PRE>
+</H3>
+</TD></TR></TABLE>
+<BR><BR>
+<H2>Required Args:</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;sound name&gt;: The name of the sound to play.</LI>
+</UL></TD></TR></TABLE>
+<BR><BR>
+<H2>Optional Args</H2>
+<TABLE>
+<TR><TD BGCOLOR="C0D4EE">
+<UL>
+<LI>1 : &lt;notification string&gt; If present, the sound will notify this string on this player when done. (Single player only)</LI>
+<LI>2 : &lt;stoppable flag&gt; If present and true, then this sound can be interrupted by another playlocalsound command with notification string.  It is a script error for a playsound that does not have this flag set to get interrupted by another playlocalsound with notify, or for a playlocalsound with notify that does not have this flag set to interrupt another playlocalsound with notify. (Single player only)"</LI>
+</UL></TD></TR></TABLE>
+<BR>
+</BODY>
+</HTML>
