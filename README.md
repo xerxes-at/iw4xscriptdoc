@@ -9,4 +9,4 @@ IW4x is a MW2 modification with dedicated servers and focus on modability.
 For more information on IW4x join https://discord.gg/sKeVmR3 or see http://iw4xcachep26muba.onion/
 
 
-##[TO THE DOCUMENTATION](https://xerxes-at.github.io/iw4xscriptdoc/)
+## [TO THE DOCUMENTATION](https://xerxes-at.github.io/iw4xscriptdoc/)
