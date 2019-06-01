@@ -15,7 +15,6 @@ A:hover             { color:#0066AA; font-family:courier new; font-size:16; text
 H1                  { padding: 0; margin: 0; }
 H2                  { padding: 0; margin: 0; }
 .cmdlist            { border:1px solid #ccc; background:#EAEAEA; padding:20px; }
-.content            { /*background-color:#B0C4DE;*/ }
+/*.content            { background-color:#B0C4DE; } */
 .sidepanel          { background-color:#CFCFCF; }
 .example            { background-color:#222222; }
-body                { cursor: url('cursor.cur'), auto; }; /* Good meme */
