@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-    <HEAD>
-        <TITLE>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</TITLE>
+    <head>
+        <title>-=[ Call Of Duty 6: Modern Warfare 2, Script Reference ]=-</title>
         <meta charset="utf-8"/>
+        <!-- BOOTSTRAP -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- Internal Styles -->
         <link rel="stylesheet" href="../../res/style.css">
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <![endif]-->
-    </HEAD>
+        <!-- PRISM -->
+        <link rel="stylesheet" href="../../res/prism.css">
+        <script src="../../res/prism.js"></script>
+    </head>
 
-    <BODY class="content">
+    <body class="content">
 
 <HR>
-<H1>SetClockUp( &lt;time&gt;, &lt;full time&gt;, &lt;material&gt;, &lt;height&gt;, &lt;width&gt; ) </H1>
+<h1>SetClockUp( &lt;time&gt;, &lt;full time&gt;, &lt;material&gt;, &lt;height&gt;, &lt;width&gt; ) </h1>
 <HR>
 <I>
-Module: HUD<BR>
+Module: HUD<br>
 </I>
 
-<BR>
+<br>
 <H2>Summary:</H2>
 <TABLE>
 <TR><TD BGCOLOR="C0D4EE">
@@ -28,7 +33,7 @@ Module: HUD<BR>
 
 </H3>
 </TD></TR></TABLE>
-<BR><BR>
+<br><br>
 <H2>Call this on:</H2>
 <TABLE>
 <TR><TD BGCOLOR="C0D4EE">
@@ -36,17 +41,14 @@ Module: HUD<BR>
 Hud Clock Element
 </H3>
 </TD></TR></TABLE>
-<BR><BR>
+<br><br>
 <H2>Example:</H2>
-<TABLE>
-<TR><TD class="example">
-<H3>
-<PRE>
+                        <pre>
+                        <code class="language-clike">
 level.bombstopwatch SetClockUp( 5, 60, "hudStopwatch", 64, 64 ); 
-</PRE>
-</H3>
-</TD></TR></TABLE>
-<BR><BR>
+            </code>
+        </pre>
+<br><br>
 <H2>Required Args:</H2>
 <TABLE>
 <TR><TD BGCOLOR="C0D4EE">
@@ -55,7 +57,7 @@ level.bombstopwatch SetClockUp( 5, 60, "hudStopwatch", 64, 64 );
 <LI>2 : &lt;full time&gt; The time in seconds represented by a full cycle of the hand, for instance a stopwatch would be 60s.</LI>
 <LI>3 : &lt;material&gt; The material for the hud clock </LI>
 </UL></TD></TR></TABLE>
-<BR><BR>
+<br><br>
 <H2>Optional Args</H2>
 <TABLE>
 <TR><TD BGCOLOR="C0D4EE">
@@ -63,6 +65,6 @@ level.bombstopwatch SetClockUp( 5, 60, "hudStopwatch", 64, 64 );
 <LI>1 : &lt;width&gt; The width of the material.</LI>
 <LI>2 : &lt;height&gt; The height of the material.</LI>
 </UL></TD></TR></TABLE>
-<BR>
-</BODY>
-</HTML>
+<br>
+</body>
+</html>
